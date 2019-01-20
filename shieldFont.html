@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <style media="screen">
+            @font-face { font-family: shieldHero; src: url('ShieldFont.ttf'); }
+            #txt {
+                font-family: shieldHero;
+                font-size: 90px;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Risto is my waifu</title>
+    </head>
+    <body>
+        <h1>WRITE SOME TEXT</h1>
+        <h3>Letters J, K, Q, X and Z doesn't work right now :/</h3>
+        <input onkeydown="update(this);" type="text" name="" value="">
+        <h1 id="txt">...</h1>
+    </body>
+
+    <script type="text/javascript">
+        function update(elem){
+            document.getElementById('txt').innerText = elem.value.toUpperCase();
+        }
+    </script>
+</html>
