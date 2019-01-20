@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
         <style media="screen">
             @font-face { font-family: shieldHero; src: url('ShieldFont.ttf'); }
@@ -9,18 +9,20 @@
             }
         </style>
         <meta charset="utf-8">
-        <title>Risto is my waifu</title>
+        <title>Shield Hero Alphabet</title>
     </head>
     <body>
         <h1>WRITE SOME TEXT</h1>
         <h3>Letters J, K, Q, X and Z doesn't work right now :/</h3>
-        <input onkeydown="update(this);" type="text" name="" value="">
+        <input id="inp" onkeydown="update(event);" onkeypress="update(event)">
         <h1 id="txt">...</h1>
     </body>
 
     <script type="text/javascript">
-        function update(elem){
-            document.getElementById('txt').innerText = elem.value.toUpperCase();
+        function update(event){
+            setTimeout(() =>
+                document.getElementById('txt').innerText = event.target.value.toUpperCase()
+            , 0);
         }
     </script>
 </html>
