@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I SUMMON BLACK MAGICIAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-image: url('bg.png'); background-repeat: repeat; background-size: cover">
+    <span id="first" style="position: absolute; top: 50%; left: 30%; font-size: 40px;
+        background-color: gray;">CLICK ANYWHERE</span>
+</body>
+<script>
+    setTimeout(() => document.getElementById('first').remove(), 1500);
+    const IMG_LINKS = [
+        'https://images-na.ssl-images-amazon.com/images/I/51btZKvA1cL.jpg',
+        'https://i.ebayimg.com/images/g/pz0AAOSwlitZ0XaI/s-l1600.jpg',
+        'https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/214637.jpg',
+        'https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1113609.jpg',
+        'https://crystal-cdn2.crystalcommerce.com/photos/6370968/1106247.jpg'
+        ];
+
+    const SAX = new Audio('./Epic Sax Guy.mp3');
+    SAX.loop = true;
+    SAX.volume = 0.25;
+    SAX.play();
+
+    document.onclick = function(event) {
+        new Audio('./BURAKU_MAGICIAN.mp3').play();
+        //console.log(event);
+        //console.log(`User clicked at ${event.x}:${event.y}`);
+
+        const div = document.createElement('div');
+        const img = new Image(133, 200);
+        const ind = Math.floor(Math.random() * IMG_LINKS.length);
+
+        img.src = IMG_LINKS[ind];
+        div.appendChild(img);
+
+        div.style.position = 'absolute';
+        div.style.top = event.y + 'px';
+        div.style.left = event.x + 'px';
+
+        document.body.appendChild(div);
+    }
+</script>
+</html>
