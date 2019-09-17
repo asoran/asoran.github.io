@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> OREO Generator </title>
+    <style>
+    .re, .o {
+        position: absolute;
+    }
+
+    .re {
+        left: 29px;
+    }
+
+    .o {
+        left: 20px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+    }
+
+    </style>
+    <script>
+
+        lastTop = 60;
+        lastEl = '';
+
+        // Chocolat
+        function addO() {
+            const o = new Image();
+            o.src = 'o.png';
+
+            const jumpSize = lastEl === 'o' ? 15 : -1;
+            lastEl = 'o';
+
+            o.style.top = (lastTop += jumpSize) + 'px';
+            o.classList.add('o');
+            document.getElementById('oreo').insertAdjacentElement('afterbegin', o);
+        }
+
+        // Blanc
+        function addRe() {
+            const re = new Image();
+            re.src = 're.png';
+
+            const jumpSize = lastEl === 'o' ? 24 : 5;
+            lastEl = 're';
+
+            re.style.top = (lastTop += jumpSize) + 'px';
+            re.classList.add('re');
+            document.getElementById('oreo').insertAdjacentElement('afterbegin', re);
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="addO()">O</button>
+    <button onclick="addRe()">RE</button>
+    <div id="oreo"></div>
+
+</body>
+</html>
