@@ -1,24 +1,36 @@
 {
-  "title": "<manga title>",
-  "description": "<manga description>",
-  "artist": "<manga artist>",
-  "author": "<manga author>",
-  "cover": "https://lelscans.net/mangas/one-piece/1080/00.jpg?v=fr1680821794",
-  "chapters": {
-    "4": {
-      "title": "<chapter name>",
-      "volume": "<volume number>",
-      "groups": {
-        "quoicoubaka": [
-          "https://lelscans.net/mangas/solo-leveling/101/1.jpg",
-          "https://lelscans.net/mangas/solo-leveling/101/2.jpg",
-          "https://lelscans.net/mangas/solo-leveling/101/3.jpg",
-          "https://lelscans.net/mangas/solo-leveling/101/4.jpg",
-          "https://lelscans.net/mangas/solo-leveling/101/5.jpg",
-          "https://lelscans.net/mangas/solo-leveling/101/6.jpg"
-         ]
-      },
-      "last_updated": "1616368746"
-    }
-  }
+   "title":"<manga title>",
+   "description":"<manga description>",
+   "artist":"<manga artist>",
+   "author":"<manga author>",
+   "cover":"https://lelscans.net/mangas/one-piece/1080/00.jpg?v=fr1680821794",
+   "chapters":{
+      "4":{
+         "title":"<chapter name>",
+         "volume":"<volume number>",
+         "groups":{
+            "quoicoubaka": [
+               "https://lelscans.net/mangas/solo-leveling/101/1.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/2.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/3.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/4.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/5.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/6.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/7.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/8.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/9.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/10.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/11.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/12.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/13.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/14.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/15.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/16.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/17.jpg",
+               "https://lelscans.net/mangas/solo-leveling/101/18.jpg"
+            ]
+         },
+         "last_updated":"1616368746"
+      }
+   }
 }
